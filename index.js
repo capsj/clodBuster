@@ -5,6 +5,7 @@
 var express = require('express');
 var app = express();
 app.use(express.static('www'));
+app.use(express.static('node_modules'));
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var path = require('path');

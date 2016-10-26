@@ -49,12 +49,13 @@
     <script src="js/directives.js"></script>
     <script src="js/services.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
 
     <script>
       var socket = io();
       $('button').click(function(){
         socket.emit('chat message hola hola');
-        //$('#m').val('');
+        $('#m').val('');
         return false;
       });
     </script>
