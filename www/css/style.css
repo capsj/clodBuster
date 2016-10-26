@@ -1,1 +1,39 @@
 /* Empty. Add your own CSS if you like */
+
+/* Estilo UpButtonsContainer */
+
+@media screen only and (max-width: 320px) {
+  div#UpButtonsContainer {
+    padding: 0px;
+  }
+}
+@media screen only and (min-width: 320px) and (max-width: 768px) {
+  div#UpButtonsContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+button#ButtonUpRight {
+  border-radius: 50px 0px 0px 0px;
+}
+button#ButtonUpLeft{
+  border-radius:0px 50px 0px 0px
+}
+button#ButtonUp{
+  border-radius:0px 0px 0px 0px;
+}
+/* fin estilo UpButtonsContainer */
+
+/* Estilo downButtonsContainer */
+
+button#ButtonDownRight {
+  border-radius: 0px 0px 50px 0px;
+}
+button#ButtonDownLeft{
+  border-radius:0px 0px 0px 50px
+}
+button#ButtonDown{
+  border-radius:0px 0px 0px 0px;
+}
+
+/* fin Estilo downButtonsContainer */
