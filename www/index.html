@@ -46,11 +46,18 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/routes.js"></script>
-
-
     <script src="js/directives.js"></script>
-
     <script src="js/services.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+
+    <script>
+      var socket = io();
+      $('button').click(function(){
+        socket.emit('chat message hola hola');
+        //$('#m').val('');
+        return false;
+      });
+    </script>
 
 
     <!-- Only required for Tab projects w/ pages in multiple tabs

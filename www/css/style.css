@@ -2,12 +2,12 @@
 
 /* Estilo UpButtonsContainer */
 
-@media screen only and (max-width: 320px) {
+@media (max-width: 320px) {
   div#UpButtonsContainer {
     padding: 0px;
   }
 }
-@media screen only and (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 768px) {
   div#UpButtonsContainer {
     padding-left: 50px;
     padding-right: 50px;
