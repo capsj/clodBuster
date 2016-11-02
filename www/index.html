@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
 
-
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
@@ -48,18 +48,6 @@
     <script src="js/routes.js"></script>
     <script src="js/directives.js"></script>
     <script src="js/services.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-
-    <script>
-      var socket = io();
-      $('button').click(function(){
-        socket.emit('chat message hola hola');
-        $('#m').val('');
-        return false;
-      });
-    </script>
-
 
     <!-- Only required for Tab projects w/ pages in multiple tabs
     <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
