@@ -17,10 +17,11 @@ div#StopButtonContainer{
 /* Estilo UpButtonsContainer */
 
 button#ButtonUpRight {
-  border-radius: 50px 0px 0px 0px;
+  border-radius:0px 50px 0px 0px
 }
 button#ButtonUpLeft{
-  border-radius:0px 50px 0px 0px
+  border-radius: 50px 0px 0px 0px;
+
 }
 button#ButtonUp{
   border-radius:0px 0px 0px 0px;

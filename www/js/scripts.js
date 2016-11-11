@@ -1,12 +1,25 @@
-var moveUpLeftURL = 'https://api.particle.io/v1/devices/2e0039000647343339373536/moveUpLeft?access_token=f913982f971850e14cb30432fad2901aa4456361';
-var moveForwardURL = 'https://api.particle.io/v1/devices/2e0039000647343339373536/moveForward?access_token=f913982f971850e14cb30432fad2901aa4456361';
-var moveUpRightURL = 'https://api.particle.io/v1/devices/2e0039000647343339373536/moveUpRight?access_token=f913982f971850e14cb30432fad2901aa4456361';
-var moveDownRightURL = 'https://api.particle.io/v1/devices/2e0039000647343339373536/downRight?access_token=f913982f971850e14cb30432fad2901aa4456361';
-var moveBackwardsURL = 'https://api.particle.io/v1/devices/2e0039000647343339373536/backwards?access_token=f913982f971850e14cb30432fad2901aa4456361';
-var moveDownLeftURL = 'https://api.particle.io/v1/devices/2e0039000647343339373536/moveDownLeft?access_token=f913982f971850e14cb30432fad2901aa4456361';
-var stopURL = 'https://api.particle.io/v1/devices/2e0039000647343339373536/stop?access_token=f913982f971850e14cb30432fad2901aa4456361';
+var moveUpLeftURL = 'http://172.22.34.176:8080/v1/devices/230043000647343339373536/moveUpLeft?access_token=7277a10adc1a30172068cd93ad8b41c7d5528e2d';
+var moveForwardURL = 'http://172.22.34.176:8080/v1/devices/230043000647343339373536/moveForward?access_token=7277a10adc1a30172068cd93ad8b41c7d5528e2d';
+var moveUpRightURL = 'http://172.22.34.176:8080/v1/devices/230043000647343339373536/moveUpRight?access_token=7277a10adc1a30172068cd93ad8b41c7d5528e2d';
+var moveDownRightURL = 'http://172.22.34.176:8080/v1/devices/230043000647343339373536/downRight?access_token=7277a10adc1a30172068cd93ad8b41c7d5528e2d';
+var moveBackwardsURL = 'http://172.22.34.176:8080/v1/devices/230043000647343339373536/backwards?access_token=7277a10adc1a30172068cd93ad8b41c7d5528e2d';
+var moveDownLeftURL = 'http://172.22.34.176:8080/v1/devices/230043000647343339373536/moveDownLeft?access_token=7277a10adc1a30172068cd93ad8b41c7d5528e2d';
+var stopURL = 'http://172.22.34.176:8080/v1/devices/230043000647343339373536/stop?access_token=7277a10adc1a30172068cd93ad8b41c7d5528e2d';
+
+
+function post(url,data){
+  $http.post(url,data).then(
+    function success(response){
+
+    },
+    function error(response){
+
+    }
+  )
+}
 
 function moveUpLeft(argument) {// argument = pin:HIGH || pin:LOW
+
     $.ajax({
         url: moveUpLeftURL,
         type: 'post',
@@ -109,7 +122,7 @@ $(document).ready(function(){
         moveUpLeft("LOW");
     });
     $("#ButtonUp").click(function(){
-        moveForward("LOW");
+        moveForward("HIGH");
     });
     $("#ButtonUpRight").click(function(){
         moveUpRight("LOW");
@@ -121,6 +134,6 @@ $(document).ready(function(){
         moveBackwards("LOW");
     });
     $("#ButtonDownLeft").click(function(){
-        moveDownLeft("LOW");
+        moveDownLeft("LOWs");
     });
 });
