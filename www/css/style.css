@@ -1,7 +1,12 @@
 /* Empty. Add your own CSS if you like */
 
-button#ButtonDerecha{
-  padding-right: 50px;
+button#Left{
+  position: absolute;
+  left: 10px;
+}
+button#Right{
+  position: absolute;
+  right: 15px;
 }
 
 div#UpButtonsContainer{
